@@ -1,39 +1,89 @@
-/* CSS HEX */
+:root {
+    --main-color: #84a2aeff;
+}
+
+html { overflow-x: hidden; }
+
+.header {
+padding: 60px 70px 30px;
+}
+
+.container {
+    max-width: 1254px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto 135px;
+}
+.site-header{
+    padding: 60px 70px 30px
+}
+/*.h1 {
+    .mb-15 {margin-bottom: 15px; }*/
+}
+.color-primary { color: #309AFD; }
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#beach-video {
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    line-height: 1.8em;
+    overflow-x: hidden;
+}
+/*
+p, span, em, a, address { color: #848586; }
+h2, p {
+    margin-top: 0;
+}*/
+
+
+
+/*
+!* CSS HEX *!
 --pewter-blue: #84a2aeff;
 --columbia-blue: #bbd3ddff;
 --azure-x-11-web-color: #d5e6ebff;
 --periwinkle-crayola: #c7d1e5ff;
 --uranian-blue: #b8dff5ff;
 
-/* CSS HSL */
+!* CSS HSL *!
 --pewter-blue: hsla(197, 21%, 60%, 1);
 --columbia-blue: hsla(198, 33%, 80%, 1);
 --azure-x-11-web-color: hsla(194, 35%, 88%, 1);
 --periwinkle-crayola: hsla(220, 37%, 84%, 1);
 --uranian-blue: hsla(202, 75%, 84%, 1);
 
-/* SCSS HEX */
+!* SCSS HEX *!
 $pewter-blue: #84a2aeff;
 $columbia-blue: #bbd3ddff;
 $azure-x-11-web-color: #d5e6ebff;
 $periwinkle-crayola: #c7d1e5ff;
 $uranian-blue: #b8dff5ff;
 
-/* SCSS HSL */
+!* SCSS HSL *!
 $pewter-blue: hsla(197, 21%, 60%, 1);
 $columbia-blue: hsla(198, 33%, 80%, 1);
 $azure-x-11-web-color: hsla(194, 35%, 88%, 1);
 $periwinkle-crayola: hsla(220, 37%, 84%, 1);
 $uranian-blue: hsla(202, 75%, 84%, 1);
 
-/* SCSS RGB */
+!* SCSS RGB *!
 $pewter-blue: rgba(132, 162, 174, 1);
 $columbia-blue: rgba(187, 211, 221, 1);
 $azure-x-11-web-color: rgba(213, 230, 235, 1);
 $periwinkle-crayola: rgba(199, 209, 229, 1);
 $uranian-blue: rgba(184, 223, 245, 1);
 
-/* SCSS Gradient */
+!* SCSS Gradient *!
 $gradient-top: linear-gradient(0deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
 $gradient-right: linear-gradient(90deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
 $gradient-bottom: linear-gradient(180deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
@@ -42,4 +92,4 @@ $gradient-top-right: linear-gradient(45deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7
 $gradient-bottom-right: linear-gradient(135deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
 $gradient-top-left: linear-gradient(225deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
 $gradient-bottom-left: linear-gradient(315deg, #84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
-$gradient-radial: radial-gradient(#84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);
+$gradient-radial: radial-gradient(#84a2aeff, #bbd3ddff, #d5e6ebff, #c7d1e5ff, #b8dff5ff);*/

@@ -1,119 +1,121 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 
-<!DOCTYPE html>
-<html lang="en">
+
+<!--</html>-->
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>My first three.js app</title>
-    <style>
-        body { margin: 0; }
-    </style>
-</head>
-<body>
-<script src="js/three.js"></script>
-<script>
-    // Our Javascript will go here.
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.2, 1000);
-
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
-
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    const cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
-
-    camera.position.z = 2;
-
-    function animate() {
-        requestAnimationFrame( animate );
-        cube.rotation.x += 0.0069;
-        cube.rotation.y += 0.069;
-        renderer.render( scene, camera );
-    }
-    animate();
-</script>
-</body>
-</html>
-<head>
     <meta charset="UTF-8">
-<!--
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
--->
+    <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Pat Barfield Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/webdesignPortfolio.css">
     <link rel="stylesheet" href="css/webdesignPorfolioPopup.css">
-
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="tm-site-header">
-        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">PAT</span> <span class="tm-color-gray-2">Barfield</span></h1>
-        <em class="tm-tagline tm-color-light-gray">webdesign portfolio</em>
-    </header>
+<header class="site-header">
+    <h1 class="mb-15"><span class="color-primary">PAT</span> <span class=>Barfield</span>
+    </h1>
+    <em class=>webdesign portfolio</em>
+</header>
 
-    <!-- Video banner 400 px height -->
-    <div id="video-container">
-        <video autoplay muted loop id="tm-video">
+<!-- Video banner 400 px height -->
+<div id="video container">
+    <video autoplay muted loop id="beach-video">
 
+<source src="">
+        <!--
+                    <source src="video/ocean-sea-wave-video.mp4" type="video/mp4">
+        -->
 
-<!--
-            <source src="video/ocean-sea-wave-video.mp4" type="video/mp4">
--->
+    </video>
+<!--    <i id="video-control-button" class="fas fa-pause"></i>-->
+</div>
 
-        </video>
-        <i id="video-control-button" class="fas fa-pause"></i>
-    </div>
-
-    <div class="container">
-        <nav class="main-nav">
-            <ul id="inline-popups">
-                <li class="nav-item">
-                    <a href="#intro" data-effect="mfp-move-from-top" class="nav-link">
-                        Introduction
-                        <i class="far fa-alicorn"></i>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#gallery" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
-                        Gallery
-                        <i class="far fa-3x fa-images"></i>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#testimonials" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        Testimonials
-                        <i class="far fa-3x fa-smile"></i>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        About
-                        <i class="fas fa-3x fa-tint"></i>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        Contact
-                        <i class="far fa-3x fa-comments"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+<div class="container">
+    <nav class="main-nav">
+        <ul id="inline-popups">
+            <li class="nav-item">
+                <a href="#intro" data-effect="mfp-move-from-top" class="nav-link">
+                    Introduction
+   <!--                 <a href="#"><img src="img/unicorn.png"></a>-->
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#gallery" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                    Gallery
+                    <i class="far fa-3x fa-images"></i>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#testimonials" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    Testimonials
+                    <i class="far fa-3x fa-smile"></i>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    About
+                    <i class="fas fa-3x fa-tint"></i>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    Contact
+                    <i class="far fa-3x fa-comments"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
     <footer class="tm-footer">
-        <span>Copyright &copy; 2022 Pat Barfield</span>
-        <span>Web Designed by
-        <a href="https://templatemo.com" title="free website templates" target="_parent" rel="nofollow">TemplateMo</a></span>
-</footer>
-<script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+        <span>Copyright &copy; 2022 Pat B.</span>
+
+    </footer>
+    <script src="js/three.js"></script>
+<!--    <script>
+        // Our Javascript will go here.
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.2, 1000);
+
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.prepend(renderer.domElement);
+
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.2;
+            cube.rotation.y += 0.1;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>-->
+    <script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
     <script src="../../DAO-TEX/jquery-3.4.1.min.js"></script>
+</div>
 </body>
 </html>
